@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elser Manuel Lázaro Rosas · Portafolio</title>
+<meta name="description" content="Elser Manuel Lázaro Rosas – Desarrollador de Software · Java · Spring Boot · Microservicios · DevOps &amp; Cloud">
+<meta property="og:title" content="Elser Manuel Lázaro Rosas">
+<meta property="og:description" content="Desarrollador de Software · Java · Spring Boot · Microservicios · DevOps &amp; Cloud">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elsermanuel.github.io/">
+<link rel="canonical" href="https://elsermanuel.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2a44'/%3E%3Cpath d='M9 22V10h9M9 16h7M9 22h9' stroke='%2338bdf8' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<style>
+:root { color-scheme: light dark; --navy: #0f2a44; --sky: #7dd3fc; --bg: #fff; --text: #1f2937; --muted: #566072;
+        --heading: #0f2a44; --accent: #0369a1; --line: #dfe5ec; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0b1420; --text: #d7dee8; --muted: #9aa7b8; --heading: #f1f6fb; --accent: #7dd3fc; --line: #243244; }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; font: 17px/1.6 "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+       color: var(--text); background: var(--bg); overflow-wrap: anywhere; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+ul { margin: 0; padding: 0; }
+strong { color: var(--heading); font-weight: 650; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+.hero { background: var(--navy); color: #fff; padding: 72px 0 56px; border-bottom: 4px solid #0ea5e9; }
+.hero h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3.25rem); line-height: 1.1; letter-spacing: -.5px; font-weight: 700; }
+.headline { margin: 14px 0 0; color: var(--sky); font-weight: 600; font-size: 1.05rem; }
+.pitch { margin: 22px 0 0; max-width: 62ch; color: #dbe7f3; font-size: 1.15rem; }
+.pitch strong { color: #fff; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.button { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 6px; font-size: .95rem; font-weight: 600;
+          color: #fff; text-decoration: none; border: 1px solid rgba(125, 211, 252, .5); transition: background .15s; }
+.button:hover { background: rgba(125, 211, 252, .14); }
+.button:focus-visible { outline-color: var(--sky); }
+.button.primary { background: var(--sky); border-color: var(--sky); color: var(--navy); }
+.button.primary:hover { background: #bae6fd; }
+.button svg { width: 16px; height: 16px; }
+
+section { margin-top: 56px; }
+h2 { margin: 0 0 22px; font-size: .82rem; text-transform: uppercase; letter-spacing: 1.6px; color: var(--accent); font-weight: 700; }
+h3 { margin: 0; font-size: 1.1rem; line-height: 1.35; color: var(--heading); }
+
+.highlights { list-style: none; border-top: 1px solid var(--line); }
+.highlights li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 1.05rem; }
+
+.row { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); }
+.when { margin: 3px 0 0; color: var(--muted); font-size: .88rem; font-variant-numeric: tabular-nums; }
+.org { margin: 2px 0 0; color: var(--muted); font-size: .95rem; }
+.row ul { margin: 10px 0 0; padding-left: 18px; }
+.row li { margin-bottom: 5px; }
+.row li::marker { color: var(--accent); }
+.stack { margin: 12px 0 0; color: var(--muted); font-size: .88rem; }
+.links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 10px 0 0; font-size: .95rem; font-weight: 600; }
+
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 36px; }
+.skill h3 { font-size: .98rem; }
+.skill p { margin: 3px 0 0; color: var(--muted); font-size: .95rem; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.facts { list-style: none; }
+.facts li { margin-bottom: 12px; }
+.facts b { display: block; color: var(--heading); font-weight: 600; }
+.facts span { display: block; color: var(--muted); font-size: .9rem; }
+
+.foot { margin-top: 64px; padding: 36px 0 48px; border-top: 1px solid var(--line); }
+.foot p { margin: 0; color: var(--muted); }
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 16px; }
+  .hero { padding: 48px 0 40px; }
+  .row { grid-template-columns: 1fr; gap: 4px; }
+  .skills, .split { grid-template-columns: 1fr; }
+  .button { flex: 1 1 auto; justify-content: center; }
+}
+</style></head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1>Elser Manuel Lázaro Rosas</h1>
+  <p class="headline">Desarrollador de Software · Java · Spring Boot · Microservicios · DevOps &amp; Cloud</p>
+  <p class="pitch">Desarrollo microservicios y APIs con <strong>Java y Spring Boot</strong>, y los llevo a producción con <strong>Docker, Kubernetes y CI/CD</strong> en Azure y AWS.</p>
+  <nav class="actions" aria-label="Contacto"><a class="button primary" href="CV_Elser_Manuel_Lazaro_Rosas.pdf" download>Descargar CV</a><a class="button" href="mailto:elser.lazaro@vallegrande.edu.pe"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Escribime</a><a class="button" href="https://linkedin.com/in/manuel-lázaro-rosas-56187a221" rel="noopener"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5m0 2a2 2 0 0 1 4 0v3"/></svg>LinkedIn</a><a class="button" href="https://github.com/ElserManuel" rel="noopener"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a></nav>
+</div></header>
+<main class="wrap">
+  <section><h2>Lo más destacado</h2><ul class="highlights"><li>Reduje un <strong>40%</strong> el tiempo de deployment automatizando pipelines CI/CD en Azure DevOps.</li><li>Logré <strong>cero downtime</strong> en los pases a producción sobre Azure y AWS.</li><li>Construí microservicios con <strong>Spring Boot y Apache Kafka</strong> para la gestión de beneficiarios de NPH, con repositorio y demo públicos.</li></ul></section>
+  <section id="proyectos"><h2>Proyectos</h2>
+      <article class="row">
+        <p class="when">Ago 2024 – Jun 2025</p>
+        <div>
+          <h3>Plataforma de beneficiarios – NPH</h3>
+          <p class="org">Full Stack Developer</p>
+          <ul><li>Desarrollé microservicios con <strong>Spring Boot</strong> y comunicación asíncrona con <strong>Apache Kafka</strong> para la gestión de beneficiarios, con alta disponibilidad y tolerancia a fallos.</li><li>Implementé control de acceso por roles con Firebase Authentication y un frontend en Angular con un módulo por microservicio.</li><li>Empaqueté los servicios en contenedores Docker y configuré un pipeline CI/CD con despliegue en Render.</li></ul>
+          <p class="stack">Spring Boot · Apache Kafka · Angular · Firebase Authentication · Docker</p>
+          <p class="links"><a href="https://github.com/ElserManuel/proyect-prs1/tree/vg-ms-person" rel="noopener">Repositorio</a> <a href="https://www.youtube.com/playlist?list=PLjIFXrSFzKjLWblkd3xYFoDBFEaTblFSM" rel="noopener">Demo en YouTube</a></p>
+        </div>
+      </article>
+      <article class="row">
+        <p class="when">Ago 2024 – Jul 2025</p>
+        <div>
+          <h3>Gestión de Intervenciones Comunitarias – Casa Hogar Santa Rosa</h3>
+          <p class="org">Analista Desarrollador · 500 h de prácticas</p>
+          <ul><li>Desarrollé microservicios reactivos con <strong>Spring Boot y WebFlux</strong> y el frontend con Angular y TypeScript, aplicando <strong>arquitectura hexagonal y DDD</strong>.</li><li>Desplegué los servicios en Railway con <strong>Docker</strong> y <strong>Kubernetes</strong>, pipelines en GitLab y seguridad con Spring Security y Firebase.</li></ul>
+          <p class="stack">Spring WebFlux · Arquitectura hexagonal · DDD · Angular · Docker · Kubernetes · GitLab CI</p>
+          
+        </div>
+      </article>
+      <article class="row">
+        <p class="when">Sep 2024 – Dic 2024</p>
+        <div>
+          <h3>Sistema de Gestión de Consultas con IA</h3>
+          <p class="org">Full Stack</p>
+          <ul><li>Desarrollé una aplicación que consume APIs REST de IA con <strong>Spring Boot (Java 17)</strong>, <strong>Angular 17</strong> y <strong>MongoDB</strong>, documentada con Swagger/OpenAPI y con pruebas unitarias y de integración.</li></ul>
+          <p class="stack">Spring Boot · Java 17 · Angular 17 · MongoDB · Swagger/OpenAPI</p>
+          <p class="links"><a href="https://youtu.be/nZE_-FXFLgE" rel="noopener">Demo</a> <a href="https://github.com/ElserManuel/AS222S5_T05_be" rel="noopener">Repositorio API</a> <a href="https://github.com/ElserManuel/AS222S5_T05_fe" rel="noopener">Repositorio web</a></p>
+        </div>
+      </article></section>
+  <section id="experiencia"><h2>Experiencia profesional</h2>
+      <article class="row">
+        <p class="when">Oct 2025 – Feb 2026</p>
+        <div>
+          <h3>Full Stack Developer</h3>
+          <p class="org">Ebisu Consulting S.A.C. · Freelance</p>
+          <ul><li>Automaticé pipelines CI/CD en Azure DevOps (testing, build y despliegue) y reduje un <strong>40%</strong> el tiempo de deployment.</li><li>Desplegué en entornos QA y Producción sobre <strong>Azure y AWS</strong> con <strong>cero downtime</strong> en los pases a producción.</li><li>Desarrollé aplicaciones empresariales con <strong>Java 17/21 y Spring Boot</strong> con arquitectura modular, mejorando la mantenibilidad y escalabilidad.</li><li>Implementé APIs RESTful documentadas con Swagger/OpenAPI y seguridad con <strong>Spring Security</strong> (JWT y autorización por roles).</li></ul>
+        </div>
+      </article>
+      <article class="row">
+        <p class="when">Nov 2023 – Feb 2025</p>
+        <div>
+          <h3>Full Stack Developer</h3>
+          <p class="org">Logipack S.A.C. · Freelance</p>
+          <ul><li>Desarrollé y mantuve <strong>microservicios en Java (Spring Boot)</strong> para la plataforma logística de la empresa.</li><li>Automaticé despliegues con <strong>Jenkins en AWS</strong>, reduciendo los tiempos de entrega.</li><li>Desarrollé servicios y scripts en <strong>Python</strong> para automatizar tareas internas.</li><li>Resolví incidentes en producción priorizando la continuidad operativa y reduciendo el impacto en el negocio.</li></ul>
+        </div>
+      </article></section>
+  <section id="habilidades"><h2>Habilidades técnicas</h2><div class="skills"><div class="skill"><h3>Desarrollo</h3><p>Java 17/21 · Spring Boot · Spring WebFlux · Spring Security · APIs RESTful · Microservicios · Swagger/OpenAPI · Node.js · Python</p></div><div class="skill"><h3>Arquitectura</h3><p>Arquitectura hexagonal · DDD · Microservicios orientados a eventos · Arquitectura modular</p></div><div class="skill"><h3>DevOps &amp; Cloud</h3><p>Docker · Kubernetes · Azure DevOps · Jenkins · GitLab CI · GitHub Actions · Azure · AWS (EC2, S3, IAM, Lambda, RDS) · GCP · Git</p></div><div class="skill"><h3>Datos y mensajería</h3><p>PostgreSQL · MySQL · SQL Server · MongoDB · Apache Kafka</p></div><div class="skill"><h3>Seguridad</h3><p>JWT · Autorización por roles · Firebase Authentication</p></div><div class="skill"><h3>Frontend</h3><p>Angular · React · TypeScript</p></div><div class="skill"><h3>Calidad y prácticas</h3><p>Testing unitario e integración · Pruebas de rendimiento y seguridad · Code Review · Scrum · Git Workflow</p></div></div></section>
+  <section class="split">
+    <div><h2>Educación</h2><ul class="facts"><li><b>Analista de Sistemas (egresado)</b><span>IES Valle Grande · 2021 – 2025</span></li></ul></div>
+    <div><h2>Certificaciones</h2><ul class="facts"><li><a href="https://www.cloudskillsboost.google/public_profiles/01427a6e-730a-4f7e-b7c3-33b4191bf516/badges/12821994" rel="noopener">DevOps Essentials</a><span>Google Cloud</span></li><li><a href="https://www.linkedin.com/posts/elser-manuel-l%C3%A1zaro-rosas-56187a221_introduction-to-docker-google-cloud-skills-activity-7233589381029122049-BXRv" rel="noopener">Introduction to Docker</a><span>Google Cloud</span></li><li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/641a2c9cb559dae22f5f543798d54837125c1c00" rel="noopener">Intermediate Docker</a><span>DataCamp</span></li><li><a href="https://www.cloudskillsboost.google/public_profiles/01427a6e-730a-4f7e-b7c3-33b4191bf516/badges/11953499" rel="noopener">BigQuery for Data Analysts</a><span>Google Cloud</span></li><li><a href="https://www.linkedin.com/posts/elser-manuel-l%C3%A1zaro-rosas-56187a221_certificate-introduction-to-sql-server-activity-6933879943701360640-p44U" rel="noopener">Introduction to SQL Server</a><span>DataCamp</span></li></ul></div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap">
+  <h2>Contacto</h2>
+  <p><a href="mailto:elser.lazaro@vallegrande.edu.pe">elser.lazaro@vallegrande.edu.pe</a> · <span>San Vicente de Cañete, Lima, Perú</span></p>
+</div></footer>
+</body></html>
